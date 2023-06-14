@@ -1,0 +1,5 @@
+include_directories("${ENV_HOME_PATH}/.platformio/packages/toolchain-sdcc/include/mcs51")
+include_directories("/include")
+
+file(GLOB SOURCES "src/*.c")
+add_executable(Z_DUMMY_TARGET ${SOURCES})
